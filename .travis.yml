@@ -7,9 +7,9 @@ before_script:
   - bundle exec rails db:setup db:migrate db:seed
 script:
   - bundle exec rspec
-after_success:
-  - docker build -t ahmedfawzyfcih/rails-api-project .
-  # Log in to the docker CLI
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-  # Take those images and push them to docker hub
-  - docker push ahmedfawzyfcih/rails-api-project
+# after_success:
+#   - docker build -t ahmedfawzyfcih/rails-api-project .
+#   # Log in to the docker CLI
+#   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+#   # Take those images and push them to docker hub
+#   - docker push ahmedfawzyfcih/rails-api-project
