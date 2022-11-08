@@ -10,11 +10,10 @@
 
 2-Here are the installation steps to run the project :
 
-   - Ruby version  : ruby 2.5.0
-   - Rails version : Rails 5.2.4.1
-   - Enter the project then run this command : bundle install
-   - Run the database migrations and seeds : rails db:migrate & rails db:seed
-   - Run the project on this port :  rails s -p 5000
+   - Ruby version  : ruby-2.6.0
+   - Rails version : Rails 6.0.4
+   - To up the env : docker-compose up --build
+   - Run the database migrations and seeds : docker-compose exec web  bundle exec rails db:prepare db:migrate
 
 3-Import apis collection to your postman : https://www.getpostman.com/collections/88ef7c55acbc72a1a548
 
